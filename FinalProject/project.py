@@ -101,16 +101,12 @@ def region_choose_user():
     This function returns a prompt for user to choose one
     of several World's parts.
     """
-    user_choose_region = int(input('Select number in accordingly:\n'
-                                   '1 SUB-SAHARAN AFRICA\n'
-                                   '2 NORTHERN AFRICA AND WESTERN ASIA\n'
-                                   '3 CENTRAL AND SOUTHERN ASIA\n'
-                                   '4 EASTERN AND SOUTH-EASTERN ASIA\n'
-                                   '5 LATIN AMERICA AND THE CARIBBEAN\n'
-                                   '6 AUSTRALIA/NEW ZEALAND\n'
-                                   '7 OCEANIA\n'
-                                   '8 EUROPE AND NORTHERN AMERICA\n'
-                                   'press here: '))
+    print()
+    for i in range(len(WORLD_PARTS)):
+        print(f'{i + 1} {WORLD_PARTS[i]}')
+
+    user_choose_region = int(input('Select number accordingly: '))
+
     return user_choose_region
 
 
